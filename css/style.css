@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffffa1;
+}
+
+
+/* || Navbar and it's elements */
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: 150;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 1.2rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.88rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* || Header */
+
+#intro {
+    background: url("../bg") no-repeat center center/cover;
+    width: 100%;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header::before {
+    content: " ";
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.primary-heading-top {
+    text-align: center;
+    font-weight: 200;
+    font-size: 4rem;
+    color: #fff;
+    z-index: 200;
+}
+
+#intro p {
+    z-index: 3;
+}
+
+.primary-heading-top strong {
+    font-size: 5rem;
+}
+
+#d-block {
+    display: block;
+}
+
+
+/* || Section Portfolio */
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2px;
+}
+
+/* || Resume Section */
+
+#resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.resume-box {
+    width: 42%;
+    margin: 10px 14px;
+}
+
+.r-item {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #6160604f;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.r-item h3 {
+    font-weight: 200;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    color: #c2df71;
+}
+
+.r-item h4 {
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.r-item h4, .date {
+    color: #fff;
+}
+
+.r-item p {
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* || ABOUT SECTION */
+
+.section-about {
+    padding-top: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-width: 900px;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.about-img, .about-text {
+    width: 40%;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text h1 {
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.about-text .first {
+    margin: 1rem 0;
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.about-text .second {
+    font-size: .92rem;
+    margin-bottom: 3rem;
+    line-height: 1.5em;
+    text-indent: 3rem;
+}
+
+.about-btn {
+    margin-top: 0px;
+}
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    border-radius: 100px;
+    padding: .5rem 1rem;
+}
+
+#btn1 {
+    background-color: #c2df71;
+}
+
+#btn2 {
+    background-color: rgba(146, 143, 143, 0.795);
+    margin-left: 2px;
+}
+
+/* ||Contact Section */
+
+#contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 90vw;
+    margin: 5rem auto;
+}
+
+#contact-section h1 {
+    flex: 0 0 100%;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.address {
+    width: 30%;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    background: #6160604f;
+    color: inherit;
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    width: 95%;
+    margin-bottom: 1rem;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    max-width: 95%;
+    min-width: 95%;
+    min-height: 50px;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+input:active {
+    border: none;
+    outline: none;
+}
+
+.contact-form button {
+    border: none;
+    padding: 18px 25px;
+    border-radius: 2rem;
+}
+
+.site-contact-details li {
+    list-style: none;
+    font-weight: 100;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.a-heading {
+    display: block;
+    color: #22456ab7;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    margin: 5rem auto;
+}
+
+footer ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    list-style: none;
+    margin: 1rem;
+    padding: 1.2rem 1.25rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    background-color: #6160604f;
+}
+
+footer svg {
+    fill: #c2df71;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* || Utilieties */
+
+.primary-heading {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.secondary-heading {
+    font-weight: 200;
+    padding: 2rem 0;
+    color: #fff;
+}
